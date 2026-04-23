@@ -230,14 +230,38 @@ footer {
     top: 3%;
  }
 
- table,td {
-    position: relative;
-    right: 35px;
-    bottom: 13%;
-
-    padding: 50px;
-    font-size: 50px;
-    border: groove 2px rgb(187, 187, 187);   
+ table{
+    width: 100%;
+    table-layout: fixed;
     border-collapse: separate;
-border-spacing: 47px ;
+    border-spacing: 30px ;
+
+}
+td{
+    border-radius: 15px;
+    padding: 0px;
+    width: 100px;
+    height: 150px;
+    font-size: 50px;
+    border: none 2px rgb(187, 187, 187);   
+    overflow: hidden;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.479);
+    text-align: center;
+}
+
+td img{
+    border-radius: 15px;
+    object-fit: cover;
+    display: block;
+    height: 150px;
+    width: 255px;
+    position: relative;
+}
+
+.esc1 {
+    position: absolute;
+    top: 14%;
+    left: 16%;
+    color: rgb(180, 117, 1);
+    font-size: 20px;
 }
